@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+/* Utilities */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: 0.3s all ease-in;
+}
+
+a:hover {
+    color: #0275d8;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    padding: .7rem;
+    color: #333;
+}
+
+input {
+    border: 1px solid #333;
+    padding: .5rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+textarea {
+    padding: .5rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #0275d8;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Navigation Bar */
+.navBar .container {
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Task 1 */
+.task1 {
+    margin: 3rem auto;
+}
+
+.task1 .card {
+    max-width: fit-content;
+    background: #FFFFFF;
+}
+
+.task1 div {
+    margin: 1rem auto;
+}
+
+.scrumFrom {
+    display: grid;
+}
+
+input[type=date], input[type=time] {
+    cursor: no-drop;
+}
+
+/* Task 2 & Table */
+.task2 {
+    margin: 5rem auto;
+}
+
+.task2 p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.task2 .card {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* Footer */
+footer {
+    background: #28282B;
+    padding: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+}
