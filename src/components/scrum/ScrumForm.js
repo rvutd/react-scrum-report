@@ -40,18 +40,18 @@ function ScrumForm({ addScrum }) {
     <section className="task1">
       <div className="container card">
         <div className="text-left">
-          <h1>JS Module 7 Task 1</h1>
+          <h1>Daily Scrum Report</h1>
           <p>Scrum Report Form</p>
         </div>
 
         <form className="scrumForm" onSubmit={onSubmit}>
           <div><input type="date" name="date" value={date} disabled/></div>
-          <div><input type="text" name="fullName" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} /></div>
+          <div><input type="text" name="fullName" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required/></div>
           <div>
-              <textarea name="haveDone" placeholder="What Did I do Today?" value={haveDone} onChange={(e) => setHaveDone(e.target.value)}></textarea>
+              <textarea name="haveDone" placeholder="What Did I do Today?" value={haveDone} onChange={(e) => setHaveDone(e.target.value)} required></textarea>
           </div>
           <div>
-              <textarea name="willDo" placeholder="What will I do Tomorrow?" value={willDo} onChange={(e) => setWillDo(e.target.value)}></textarea>
+              <textarea name="willDo" placeholder="What will I do Tomorrow?" value={willDo} onChange={(e) => setWillDo(e.target.value)} required></textarea>
           </div>
           <div><input type="submit" className="btn"/></div>
         </form>

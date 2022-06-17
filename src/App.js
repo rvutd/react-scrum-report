@@ -1,6 +1,8 @@
 import Header from "./components/essentials/Header";
 import Footer from "./components/essentials/Footer";
 import ScrumForm from "./components/scrum/ScrumForm";
+import ScrumTable from "./views/ScrumTable";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
 
@@ -15,11 +17,16 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Header />
-      <ScrumForm addScrum={addScrum} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<ScrumForm addScrum={addScrum} />} exact />
+          <Route exact path="/scrum-data" element={<ScrumTable />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

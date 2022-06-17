@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
   return (
     <header className="navBar">
       <div className="container">
           <nav className="left">
-              <h1><a href="index.html">Scrum Report</a></h1>
+              <h1><Link to="/">Scrum Report</Link></h1>
           </nav>
           <nav className="right">
               <ul>
-                  <li><a href="index.html">Scrum Form</a></li>
-                  <li><a href="task2.html">Scrum Data</a></li>
+                  <li><Link to="/">Scrum Form</Link></li>
+                  <li><Link to="scrum-data">Scrum Data</Link></li>
               </ul>
           </nav>
       </div>

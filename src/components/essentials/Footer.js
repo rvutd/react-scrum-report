@@ -1,7 +1,9 @@
+import { FaHeart } from "react-icons/fa"
+
 const Footer = () => {
   return (
     <footer>
-        <p>Made with <i className="fa-solid fa-heart red"></i> by rvutd</p>
+        <p>Made with <FaHeart style={{ color: "red" }}></FaHeart> by rvutd</p>
     </footer>
   )
 }
