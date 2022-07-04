@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100vh;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
@@ -117,6 +121,9 @@ input[type=date], input[type=time] {
 
 /* Footer */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: #28282B;
     padding: 1rem;
     text-align: center;
